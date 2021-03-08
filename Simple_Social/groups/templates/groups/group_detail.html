@@ -1,0 +1,62 @@
+{% extends 'groups/group_base.html' %}
+
+{% block pregroup %}
+<div class="container md-auto">
+    <h1>{{group.name}}</h1>
+    <h2> Member Count: {{group.members.count}}</h2>
+
+    <div class="content p-2 m-5 col-10">
+        {% if user in group.members.all %}
+         <a class='btn  mx-5 btn-success' href="{% url 'posts:create' %} ">
+            </span class="fa fa-plus"></span> Write a new Post</a>
+            </a>
+            <a href="{% url 'groups:leave' slug=group.slug %}" class= "btn btn-warning"><span class="fa fa-times-circle-o"></span>Leave</a>
+        {% else %}
+
+        <a href="{% url 'groups:join' slug=group.slug %}"  class=" btn btn-lg btn-warning"><span class="fa fa-check-circle-o"></span>Join</a>
+
+
+
+        
+        {% endif %}
+    </div>
+</div>
+{% endblock  %}
+
+{% block group_content %}
+
+
+
+
+
+    {% if group.posts.count == 0 %}
+            <h3>No posts in the group yet!</h3>
+        {% else %}
+<div class="card">
+  <div class="card-body">
+            {% for post in group.posts.all %}
+                {% include "posts/_post.html" %}
+            {% endfor %}
+        {% endif %}
+  </div>
+</div>
+    
+<!--
+<a class="list-group-item list-group-item-action flex-column align-items-start my-2" >
+-->
+
+</div>
+
+<!--
+
+    <div class="col-md-g my-4">
+        {% if group.posts.count == 0 %}
+            <h3>No posts in the group yet!</h3>
+        {% else %}
+            {% for post in group.posts.all %}
+                {% include "posts/_post.html" %}
+            {% endfor %}
+        {% endif %}
+    </div>
+-->
+{% endblock  %}
