@@ -53,7 +53,7 @@ The winning feature of this website is the unmatched user experience paired with
 * [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [Figma](https://www.figma.com/)
-* [Lucid chart](www.lucidchart.com )
+* [Lucid chart](https://www.lucidchart.com/)
 * Custom CSS
 
 <br>
