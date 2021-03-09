@@ -52,8 +52,8 @@ The winning feature of this website is the unmatched user experience paired with
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
-* [Figma](https://www.figma.com/)
-* [Lucid chart](https://www.lucidchart.com/)
+* [Figma](https://www.figma.com/?target=_blank) 
+* [Lucid chart](https://www.lucidchart.com/?target=_blank)
 * Custom CSS
 
 
