@@ -46,7 +46,6 @@ The winning feature of this website is the unmatched user experience paired with
 
 ## Built With
 
-
 * [Django 3.1.5](https://docs.djangoproject.com/en/3.1/releases/3.1.5/)
 * [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
